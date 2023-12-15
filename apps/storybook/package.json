@@ -1,0 +1,25 @@
+{
+  "name": "@crescent/storybook",
+  "version": "0.1.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook --quiet"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@storybook/addon-actions": "7.6.5",
+    "@storybook/addon-essentials": "7.6.5",
+    "@storybook/addon-links": "7.6.5",
+    "@storybook/react": "7.6.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "babel-loader": "9.1.3",
+    "typescript": "^5.3.3",
+    "@crescent/eslint-config": "workspace:^0.2.0",
+    "@crescent/prettier-config": "workspace:^0.1.0",
+    "@crescent/tsconfig": "workspace:^0.1.0"
+  }
+}
