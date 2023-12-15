@@ -31,7 +31,7 @@ function HomeLayout({ children }: HomeLayoutProps) {
             <div className="flex items-center gap-x-4 md:gap-x-4">
               <div className="hidden md:block">
                 <Button variant="nav" size="sm">
-                  <Link href="/auth/sign-in">Sign In</Link>
+                  <Link href="/auth/sign-in">Sign In With</Link>
                 </Button>
               </div>
               <Button variant="secondary" size="sm">
