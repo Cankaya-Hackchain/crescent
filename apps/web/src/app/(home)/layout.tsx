@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { SignedIn, UserButton } from "@clerk/nextjs";
 
 import { Button } from "@crescent/ui/button";
 import { Icons } from "@crescent/ui/icons";
@@ -36,6 +37,9 @@ function HomeLayout({ children }: HomeLayoutProps) {
               <Button variant="secondary" size="sm">
                 <Link href="/auth/sign-up">Getting Started</Link>
               </Button>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
               <div className="-mr-1 md:hidden">
                 <Icons.Menu />
               </div>

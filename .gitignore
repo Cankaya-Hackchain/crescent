@@ -16,6 +16,8 @@ next-env.d.ts
 # Production
 build
 
+dist/
+
 # Miscellaneous
 .DS_Store
 *.pem

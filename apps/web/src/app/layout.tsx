@@ -8,6 +8,8 @@ import { ThemeProvider } from "~/context/theme-provider";
 import "@crescent/ui/styles.css";
 import "../styles/globals.css";
 
+import { ClerkProvider } from "@clerk/nextjs";
+
 export const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -31,7 +33,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={classBody}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ClerkProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
