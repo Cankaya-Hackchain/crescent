@@ -1,5 +1,3 @@
-![crescen-logo](https://github.com/Cankaya-Hackchain/crescent/assets/149934410/dcde2600-5f3a-4eb3-8d76-b7f30a143db4)
-
 # Crescent Blockchain-powered Disaster Relief Platform 🌐🚀
 
 ## Overview
