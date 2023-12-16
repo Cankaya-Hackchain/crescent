@@ -1,77 +1,35 @@
-# Crescent Blockchain-powered Disaster Relief Platform 🌐🚀
+# EKONOMİK İSTİKRAR PLATFORMU 🌐🚀
 
 ## Overview
 
-The Crescent Blockchain-powered Disaster Relief Platform is a revolutionary solution designed to enhance the efficiency and transparency of disaster relief efforts using cutting-edge blockchain technology.
+Ekonomik İstikrar Platformu kısa adıyla EİP, serbest araba piyasasında yaşanan anomali fiyat artışlarına caydırıcı olmak amacıyla çıkarılan bir dApp. Platformun pilot uygulamalarına da sunumda yer verilecektir.
 
-## Problem Statement ❗
+## Problem Tespiti ❗
 
-Inefficient, opaque, and misdirected aid allocation hampers the effectiveness of disaster response, leading to challenges in relief and recovery efforts.
+Piyasanın mevcut durumda istenilen düzeye gelememesi, bunun sonucunda doğan fahiş fiyat artışları, bunun da sonucunda doğan enflasyon. Gördüğünüz gibi hepsi birbirini tetikleyen bir zincir etkisi gibi.
 
-## Solution 🛠️
+## Çözümlerimiz 🛠️
 
-The Crescent platform leverages blockchain's immutability and transparency to address these challenges:
+Alınan arabanın noterde gerekli verilerinin blockchaine kaydedilerek sonraki işlemler için takip edilebilmesi ve saklanabilmesi.
 
-- **Enhanced Trust and Accountability:** Utilizes a tamper-proof ledger for all donations and resource distribution.
+Gerekli verilerden kastımız nelerdir?
 
-- **Optimized Resource Allocation:** Real-time data ensures aid reaches areas with critical needs, minimizing waste.
+-Şase no
+-Yıl
+-Km
+-Renk
+-Tramer kaydı
+-Son satış fiyatı
 
-- **Simplified Donations:** Allows donations through both blockchain wallets and email addresses for broad accessibility.
 
-- **Efficiency and Coordination:** AI assists users in making informed decisions and facilitates collaboration among stakeholders.
+## Programımızın amaçları 🌟
 
-## Features 🌟
+Vatandaşımızın refahını arttırması
+Fiyat manipülasyonu ve sahtekarlığın önüne geçmesi
+Devletimizin kontrol mekanizmasının güçlendirilmesi
+Kamu ve özel sektör işbirliği
+Uyarlanabilir olması sebebiyle de diğer çeşitli alanlara özellikle afet konusunda pilot uygulamamızı kulllanarak yapılan çalışmaların veriminin arttırılması 
 
-1. **User-friendly Interface:**
+## Özetlemek gerekirse
 
-   - Accessible for both technical and non-technical users.
-
-2. **Real-time Data Visualization:**
-
-   - Dashboard displaying disaster needs and resource availability by region.
-
-3. **Secure Donation System:**
-
-   - Blockchain-based platform ensures transparency and tamper-proof recordkeeping.
-
-4. **AI-powered Assistance:**
-
-   - Guides users in making informed donation decisions.
-
-5. **Delivery Integration:**
-
-   - Partnered with authorized organizations and intermediaries for efficient delivery.
-
-6. **Geolocation-based Routing:**
-   - Automatic routing of donations to specific areas in need.
-
-## Implementation Plan 📅
-
-1. **Develop Core Platform:**
-
-   - Build core functionality and secure partnerships with key stakeholders.
-
-2. **Pilot Test:**
-
-   - Test the platform in a controlled environment and gather user feedback.
-
-3. **Refine and Launch:**
-   - Implement feedback and launch a nationwide adoption campaign.
-
-## Expected Outcomes 🎯
-
-- Enhanced transparency and trust in disaster relief efforts.
-- More efficient and effective resource allocation.
-- Reduced waste and duplication of efforts.
-- Faster and fairer aid distribution.
-- Stronger collaboration among stakeholders.
-
-## Sustainability 🌱
-
-- Long-term partnerships with government agencies and NGOs ensure funding and support.
-- Platform's efficiency will attract further donations and partnerships.
-- Potential for future integration with other disaster management systems.
-
-## Conclusion ❤️
-
-The Crescent platform offers a revolutionary approach to disaster relief, ensuring aid reaches those who need it most and rebuilding communities effectively.
+Ekonomik İstikrar Platformu enflasyonu düşürmeyi amaç ve misyon haline getirmiş, ilk olarak araba piyasasından başlayarak çeşitli alanlara ve uygulamalara açılarak ülkemizdeki enflasyon sorununu bitirecek bir dApp.
