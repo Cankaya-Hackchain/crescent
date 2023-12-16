@@ -1,10 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const userRouter = require("./routers/user.router");
-const companyRouter = require("./routers/company.router");
-const addressRouter = require("./routers/address.router");
-const customerRouter = require("./routers/customer.router");
 const userEfficiencyRouter = require("./routers/userEfficiency.router");
+const CompanyRouter = require("./routers/company.router");
+const ItemRouter = require("./routers/item.router");
 const app = express();
 
 const dbURI =
@@ -16,10 +15,9 @@ mongoose
 
 app.use(express.json());
 app.use(userRouter);
-app.use(companyRouter);
-app.use(addressRouter);
-app.use('/customer',customerRouter);
 app.use(userEfficiencyRouter);
+app.use(CompanyRouter);
+app.use(ItemRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port);
