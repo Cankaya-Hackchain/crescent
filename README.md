@@ -1,7 +1,5 @@
 # EKONOMİK İSTİKRAR PLATFORMU 🌐🚀
 
-## Overview
-
 Ekonomik İstikrar Platformu kısa adıyla EİP, serbest araba piyasasında yaşanan anomali fiyat artışlarına caydırıcı olmak amacıyla çıkarılan bir dApp. Platformun pilot uygulamalarına da sunumda yer verilecektir.
 
 ## Problem Tespiti ❗
