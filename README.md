@@ -22,11 +22,11 @@ Gerekli verilerden kastımız nelerdir?
 
 ## Programımızın amaçları 🌟
 
-Vatandaşımızın refahını arttırması
-Fiyat manipülasyonu ve sahtekarlığın önüne geçmesi
-Devletimizin kontrol mekanizmasının güçlendirilmesi
-Kamu ve özel sektör işbirliği
-Uyarlanabilir olması sebebiyle de diğer çeşitli alanlara özellikle afet konusunda pilot uygulamamızı kulllanarak yapılan çalışmaların veriminin arttırılması 
+Vatandaşımızın refahını arttırması.
+Fiyat manipülasyonu ve sahtekarlığın önüne geçmesi.
+Devletimizin kontrol mekanizmasının güçlendirilmesi.
+Kamu ve özel sektör işbirliği.
+Uyarlanabilir olması sebebiyle de diğer çeşitli alanlara özellikle afet konusunda pilot uygulamamızı kulllanarak yapılan çalışmaların veriminin arttırılması.
 
 ## Özetlemek gerekirse
 
