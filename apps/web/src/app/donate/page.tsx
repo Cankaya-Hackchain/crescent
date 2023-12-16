@@ -36,8 +36,8 @@ function HomeLayout({ children }: HomeLayoutProps) {
               </div>
               {/* <Button variant="secondary" size="sm">
                 <Link href="/auth/sign-up">Getting Started</Link>
-              </Button> */}
-              {/* <SignedIn>
+              </Button>
+              <SignedIn>
                 <UserButton />
               </SignedIn> */}
               <div className="-mr-1 md:hidden">

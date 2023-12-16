@@ -33,9 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={classBody}>
-        <ClerkProvider>
           <ThemeProvider>{children}</ThemeProvider>
-        </ClerkProvider>
       </body>
     </html>
   );
