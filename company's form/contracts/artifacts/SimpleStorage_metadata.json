@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tarih",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fiyat",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SimpleStorage.satis",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mockDb",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "tarih",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fiyat",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tarih",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fiyat",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SimpleStorage.sol": "SimpleStorage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleStorage.sol": {
+			"keccak256": "0xca73f75e23315c9181680f474b8231999d8e389877890024289dfcf2df805cf5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1fd0abe0a5beed7ff7554953232c71bcece7c96180bcf2caa528a2e5ba2f4bb3",
+				"dweb:/ipfs/QmYuJJivkJLryabpQS6qHMSiJGg39gQCfGvWzdp2C45Mxs"
+			]
+		}
+	},
+	"version": 1
+}
