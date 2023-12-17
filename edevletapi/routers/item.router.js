@@ -2,71 +2,74 @@ const express = require("express");
 const Item = require("../Models/Item");
 const router = express.Router();
 const Company = require("../Models/Company");
+const { get } = require("mongoose");
 
 router.post("/items", async (req, res) => {
+    console.log("req.body", req.body);
   const item = new Item(req.body);
+  console.log("item", item);
   let items;
   try {
     const companies = await Company.find({});
-    console.log("companiesss", companies);
     console.log(companies);
     const company = companies.find(
         (comp) => comp.companyName === req.body.companyName
     );
-    console.log("sdlkfjdsşlm.f",company);
     console.log("companyname", req.body.companyName);
 
     item.company_id = company._id.toString();
+   
 
     console.log("item_company_id", item.company_id);
 
     if (!companies) {
         throw new Error("No companies found");
     }
+    if(item.year == 2023){
+        item.marketPrice = item.price;
+        item.is_blacklist = 0;
+        await item.save();
+    res.status(201).send(item);
+    }
 
     const cars = await Item.find({});
     items = cars.filter((car) => car.chassisNumber === item.chassisNumber);
-    if (!items) {
-        const currentYear = new Date().getFullYear();
-        const yearsSince = currentYear - item.year.getFullYear();
-        const updatedPrice = averagePrice * Math.pow(1 + item.yearlyEnflationRate, yearsSince);
+    console.log("gelenitem:", items)
+    if (items.length > 0) {
+        console.log("girdi");
+        // items = cars.filter((car) => {car.year > item.year && });
 
-        const depreciationRate = 0.00001;
-        const depreciationAmount = item.km * averagePrice * depreciationRate;
-        const finalPrice = updatedPrice - depreciationAmount;
-        item.marketPrice = finalPrice;
-        console.log("sadsa", finalPrice);
-        if (item.price > (finalPrice * 20) / 100 + finalPrice) {
-        item.is_blacklist = 1;
+        // const currentYear = new Date().getFullYear();
+        // const yearsSince = currentYear - item.year.getFullYear();
+        // const updatedPrice = averagePrice * Math.pow(1 + item.yearlyEnflationRate, yearsSince);
+        // const depreciationRate = 0.00001;
+        // const depreciationAmount = item.km * averagePrice * depreciationRate;
+        // console.log("depreciationAmount", depreciationAmount);
+        // console.log("updatedPrice", updatedPrice)
+        // const finalPrice = depreciationAmount - updatedPrice ;
+        // item.marketPrice = finalPrice - item.damageRecord;
+        // console.log("sadsa", item.marketPrice);
+
+        console.log("giridi2");
+        const getLastPrice = items[items.length - 1].price;
+        const marketPrice = (getLastPrice * ((2023 - item.lastUpdateDate)/2))-item.damageRecord-item.km/12;
+        item.lastUpdateDate = 2023;
+        if(item.price > marketPrice){
+            item.is_blacklist = 1;
+            console.log("blacklist1")
         }
-
-        await item.save();
-        res.status(201).send(item);
+        else{
+            item.is_blacklist = 0;
+            console.log("blacklist0")
+        }
+        item.marketPrice = marketPrice;
     } 
-    else {
-        if (!items || items.length === 0) {
-        return "Belirtilen özelliklere sahip araç bulunamadı.";
-        }
-
-        const totalPrices = items.reduce((sum, car) => sum + car.price, 0);
-
-        const averagePrice = totalPrices / items.length;
-
-        const currentYear = new Date().getFullYear();
-        const yearsSince = currentYear - items[0].lastUpdateDate.getFullYear();
-        const updatedPrice =
-        averagePrice * Math.pow(1 + items[0].yearlyEnflationRate, yearsSince);
-
-        const depreciationRate = 0.00001;
-        const depreciationAmount = item.km * averagePrice * depreciationRate;
-        const finalPrice = updatedPrice - depreciationAmount;
-        item.marketPrice = finalPrice;
-        console.log("sadsa", finalPrice);
-        if (item.price > (finalPrice * 20) / 100 + finalPrice) {
-        item.is_blacklist = 1;
-        }
-    }
-
+      if(item.is_blacklist !== 1 && item.is_blacklist !== 0)
+      {
+        console.log("blacklist2")
+        item.is_blacklist = 0;
+      }
+    console.log("sonprice", item)
     await item.save();
     res.status(201).send(item);
 } catch (e) {

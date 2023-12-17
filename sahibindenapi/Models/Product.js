@@ -1,8 +1,12 @@
 const { Schema, model } = require("mongoose");
 const mongoose = require("mongoose");
 
-const ItemSchema = new Schema(
+const ProductScheme = new Schema(
     {
+        companyName: {
+            type: String,
+            required: true,
+        },
         name: {
             type: String,
             required: true,
@@ -19,18 +23,8 @@ const ItemSchema = new Schema(
             type: Number,
             required: false,
         },
-        
         chassisNumber: {
             type: String,
-            required: false,
-        },
-        is_blacklist: {
-            type: Number,
-            required: true,
-        },
-        company_id: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Company",
             required: false,
         },
         tramerRecord: {
@@ -38,10 +32,6 @@ const ItemSchema = new Schema(
             required: false,
         },
         damageRecord: {
-            type: Number,
-            required: false,
-        },
-        marketPrice: {
             type: Number,
             required: false,
         },
@@ -57,6 +47,6 @@ const ItemSchema = new Schema(
     { timestamps: true }
 );
 
-const Item = model("Item", ItemSchema);
+const Product = model("Product", ProductScheme);
 
-module.exports = Item;
+module.exports = Product;
